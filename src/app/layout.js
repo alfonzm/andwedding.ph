@@ -102,7 +102,9 @@ export default function RootLayout({ children }) {
           <section className="w-full sm:w-1/2 flex justify-center items-center">
             <div className="text-5xl" style={{ width: "12ch" }}>
               <p className="pb-12" style={{ lineHeight: "1.2" }}>
-                The thirteen year long journey that led to this day—
+                The thirteen year long journey that led to this
+                <br />
+                day —
               </p>
               <Link
                 className="text-3xl text-white bg-black px-8 py-4"
