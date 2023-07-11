@@ -18,7 +18,7 @@ const Navbar = () => {
         <h1 className="text-2xl font-bold">A&amp;D</h1>
       </div>
       <div className="flex space-x-4">
-        <button className="px-4 py-2 bg-white text-black font-semibold hover:bg-blue-600">
+        <button className="px-4 py-2 bg-black text-white font-semibold hover:bg-blue-600">
           RSVP
         </button>
       </div>
