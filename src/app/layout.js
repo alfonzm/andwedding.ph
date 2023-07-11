@@ -7,8 +7,24 @@ import stairs from "./images/stairs.jpg";
 import Image from "next/image";
 import Link from "next/link";
 // import cover from "./images/cover3.jpg";
+import localFont from "next/font/local";
 
-const baskervville = Baskervville({ subsets: ["latin"], weight: ["400"] });
+// const baskervville = Baskervville({ subsets: ["latin"], weight: ["400"] });
+const baskerville = localFont({
+  src: [
+    {
+      path: "./fonts/baskerville_normal.ttf",
+      // path: "./fonts/caslon.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/baskerville_italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+});
 
 export const metadata = {
   title: "A&D 09.16.23",
@@ -19,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={baskervville.className}>
+      <body className={`${baskerville.className} leading-tight tracking-tight`}>
         <Navbar />
 
         <section
@@ -32,27 +48,25 @@ export default function RootLayout({ children }) {
           }}
         ></section>
 
-        <section className="p-10 text-center flex" style={{ height: "80vh" }}>
+        <section className="px-10 text-center flex" style={{ height: "90vh" }}>
           <p style={{ width: "40ch", margin: "auto", fontSize: "3rem" }}>
-            On the sixteenth of September 2023, all roads lead to Iligan City
-            for the wedding of Alfonz Montelibano & Danica Impang.
+            On the sixteenth of September 2023, all
+            <br />
+            roads lead to Iligan City for the wedding of
+            <br />
+            Alfonz Montelibano & Danica Impang.
           </p>
         </section>
 
         <Image src={cover2} style={{ width: "100%" }} />
 
-        <section className="flex items-center" style={{ height: "80vh" }}>
+        <section className="flex items-center" style={{ height: "95vh" }}>
           <section className="flex flex-wrap w-full">
             <section className="w-full sm:w-1/2">
-              <div className="p-4 flex justify-center">
-                <div className="text-left">
-                  <h3
-                    className="uppercase font-bold"
-                    style={{ letterSpacing: "2px" }}
-                  >
-                    Ceremony
-                  </h3>
-                  <p className="mt-2 text-3xl">
+              <div className="p-4 flex justify-center my-24">
+                <div className="text-left w-96">
+                  <h3 className="uppercase font-bold">Ceremony</h3>
+                  <p className="mt-2 text-3xl leading-normal">
                     Half-past one in the afternoon
                     <br />
                     Lord of the Holy Cross Parish
@@ -61,15 +75,10 @@ export default function RootLayout({ children }) {
               </div>
             </section>
             <section className="w-full sm:w-1/2">
-              <div className="p-4 flex justify-center">
-                <div className="text-left">
-                  <h3
-                    className="uppercase font-bold"
-                    style={{ letterSpacing: "2px" }}
-                  >
-                    Reception
-                  </h3>
-                  <p className="mt-2 text-3xl">
+              <div className="p-4 flex justify-center my-24">
+                <div className="text-left w-96">
+                  <h3 className="uppercase font-bold">Reception</h3>
+                  <p className="mt-2 text-3xl leading-normal">
                     Five o’clock in the afternoon
                     <br />
                     The Balcony
@@ -93,7 +102,7 @@ export default function RootLayout({ children }) {
           <section className="w-full sm:w-1/2 flex justify-center items-center">
             <div className="text-5xl" style={{ width: "12ch" }}>
               <p className="pb-12" style={{ lineHeight: "1.2" }}>
-                The thirteen year long journey that led to this day —
+                The thirteen year long journey that led to this day—
               </p>
               <Link
                 className="text-3xl text-white bg-black px-8 py-4"

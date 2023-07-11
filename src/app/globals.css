@@ -36,3 +36,10 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+h3 {
+  letter-spacing: 0.25em;
+}
+
+.time-column {
+}
