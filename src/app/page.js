@@ -1,9 +1,10 @@
 import cover from "./images/cover4.jpg";
 import cover2 from "./images/cover5.jpg";
 import stairs from "./images/stairs.jpg";
+import walk from "./images/walk.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from './components/logo';
+import Logo from "./components/logo";
 
 // import cover from "./images/cover3.jpg";
 
@@ -64,19 +65,18 @@ export default function Home() {
         </section>
         */}
 
-      <section className="flex px-20">
-        <section className="w-full sm:w-1/2">
+      <section className="flex flex-wrap w-full">
+        <section className="w-full sm:w-1/2 p-0 sm:p-4 md:p-10 md:pb-36">
           <Image src={stairs} style={{ width: "100%" }} />
         </section>
         <section className="w-full sm:w-1/2 flex justify-center items-center">
-          <div className="text-5xl" style={{ width: "12ch" }}>
-            <p className="pb-12" style={{ lineHeight: "1.2" }}>
+          <div className="text-center sm:text-left my-28 sm:my-0 text-3xl sm:text-4xl lg:text-5xl p-10 story">
+            <p className="mb-10 leading-tight">
               The thirteen year long journey that led to this
-              <br />
               day —
             </p>
             <Link
-              className="text-3xl text-white bg-black px-8 py-4"
+              className="text-2xl md:text-3xl text-white bg-black px-12 py-5 inline-block hover:underline"
               href="/story"
             >
               Our Story
@@ -85,21 +85,27 @@ export default function Home() {
         </section>
       </section>
 
+      <section>
+        <Image src={walk} style={{ width: "100%" }} />
+      </section>
+
       <section
-        style={{ height: "90vh" }}
+        style={{ height: "60vh" }}
         className="flex items-center justify-center text-center "
       >
         <div className="px-8">
           <p className="text-3xl md:text-5xl leading-tight mb-10">
             We can’t wait to celebrate with you.
           </p>
-          <p className="text-xl md:text-3xl">— <Logo /></p>
+          <p className="text-xl md:text-3xl">
+            — <Logo />
+          </p>
         </div>
       </section>
 
       <section className="flex justify-center items-center">
         <Link
-          className="text-4xl text-white bg-black inline-block text-center"
+          className="text-3xl text-white bg-black inline-block text-center w-full hover:underline"
           style={{ padding: "4rem 10rem" }}
           href="/rsvp"
         >
