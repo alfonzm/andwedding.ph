@@ -36,8 +36,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${baskerville.className} leading-tight tracking-tight`}>
-        <Navbar />
-
         <section
           className="p-10 text-center flex"
           style={{
@@ -49,24 +47,22 @@ export default function RootLayout({ children }) {
         ></section>
 
         <section className="px-10 text-center flex" style={{ height: "90vh" }}>
-          <p style={{ width: "40ch", margin: "auto", fontSize: "3rem" }}>
-            On the sixteenth of September 2023, all
-            <br />
-            roads lead to Iligan City for the wedding of
-            <br />
-            Alfonz Montelibano & Danica Impang.
-          </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight md:leading-tight">
+            On the sixteenth of September 2023, all{" "}
+            roads lead to Iligan City for the wedding of{" "}
+            Alfonz Montelibano <em>&</em> Danica Impang.
+          </h1>
         </section>
 
         <Image src={cover2} style={{ width: "100%" }} />
 
-        <section className="flex items-center" style={{ height: "95vh" }}>
+        <section className="flex items-center my-10" style={{ height: "100vh" }}>
           <section className="flex flex-wrap w-full">
             <section className="w-full sm:w-1/2">
-              <div className="p-4 flex justify-center my-24">
+              <div className="p-8 flex justify-center my-20">
                 <div className="text-left w-96">
-                  <h3 className="uppercase font-bold">Ceremony</h3>
-                  <p className="mt-2 text-3xl leading-normal">
+                  <h3 className="uppercase text-xs md:text-base">Ceremony</h3>
+                  <p className="mt-2 text-2xl md:text-3xl leading-tight">
                     Half-past one in the afternoon
                     <br />
                     Lord of the Holy Cross Parish
@@ -75,10 +71,10 @@ export default function RootLayout({ children }) {
               </div>
             </section>
             <section className="w-full sm:w-1/2">
-              <div className="p-4 flex justify-center my-24">
+              <div className="p-8 flex justify-center my-20">
                 <div className="text-left w-96">
-                  <h3 className="uppercase font-bold">Reception</h3>
-                  <p className="mt-2 text-3xl leading-normal">
+                  <h3 className="uppercase text-xs md:text-base">Reception</h3>
+                  <p className="mt-2 text-2xl md:text-3xl leading-tight">
                     Five o’clock in the afternoon
                     <br />
                     The Balcony

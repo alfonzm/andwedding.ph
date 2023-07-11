@@ -37,9 +37,17 @@ body {
   background-position: center;
 }
 
-h3 {
-  letter-spacing: 0.25em;
+h1 {
+  width: 19ch;
+  margin: auto;
 }
 
-.time-column {
+@media only screen and (min-width: 768px) {
+  h1 {
+    width: 38ch;
+  }
+}
+
+h3 {
+  letter-spacing: 0.25em;
 }
