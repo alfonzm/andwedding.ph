@@ -3,6 +3,7 @@ import cover2 from "./images/cover5.jpg";
 import stairs from "./images/stairs.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from './components/logo';
 
 // import cover from "./images/cover3.jpg";
 
@@ -88,13 +89,11 @@ export default function Home() {
         style={{ height: "90vh" }}
         className="flex items-center justify-center text-center "
       >
-        <div>
-          <p className="text-5xl leading-tight mb-10">
-            We can’t wait to celebrate
-            <br />
-            with you.
+        <div className="px-8">
+          <p className="text-3xl md:text-5xl leading-tight mb-10">
+            We can’t wait to celebrate with you.
           </p>
-          <p className="text-3xl">— A&D</p>
+          <p className="text-xl md:text-3xl">— <Logo /></p>
         </div>
       </section>
 

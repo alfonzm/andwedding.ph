@@ -8,12 +8,16 @@ import localFont from "next/font/local";
 const baskerville = localFont({
   src: [
     {
+      // path: "./fonts/imfell_french_regular.ttf",
+      // path: "./fonts/imfell_regular.ttf",
       path: "./fonts/baskerville_normal.ttf",
       // path: "./fonts/caslon.otf",
       weight: "400",
       style: "normal",
     },
     {
+      // path: "./fonts/imfell_french_italic.ttf",
+      // path: "./fonts/imfell_italic.ttf",
       path: "./fonts/baskerville_italic.ttf",
       weight: "400",
       style: "italic",
