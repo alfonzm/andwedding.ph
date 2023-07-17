@@ -21,7 +21,7 @@ export default function Home() {
         }}
       ></section>
 
-      <section className="px-10 text-center flex" style={{ height: "90vh" }}>
+      <section className="px-10 text-center flex" style={{ height: "80vh" }}>
         <h1 className="text-3xl sm:text-4xl md:text-5xl leading-tight md:leading-tight">
           On the sixteenth of September 2023, all roads lead to Iligan City for
           the wedding of Alfonz Montelibano <em>&</em> Danica Impang.
@@ -30,7 +30,7 @@ export default function Home() {
 
       <Image src={cover2} style={{ width: "100%" }} />
 
-      <section className="flex items-center my-10" style={{ height: "100vh" }}>
+      <section className="flex items-center my-10" style={{ height: "85vh" }}>
         <section className="flex flex-wrap w-full">
           <section className="w-full sm:w-1/2">
             <div className="p-8 flex justify-center my-20">
@@ -65,8 +65,8 @@ export default function Home() {
         </section>
         */}
 
-      <section className="flex flex-wrap w-full">
-        <section className="w-full sm:w-1/2 p-0 sm:p-4 md:p-10 md:pb-36">
+      <section className="flex flex-wrap w-full" style={{ backgroundColor: '#EEECE3' }}>
+        <section className="w-full sm:w-1/2 p-0">
           <Image src={stairs} style={{ width: "100%" }} />
         </section>
         <section className="w-full sm:w-1/2 flex justify-center items-center">
@@ -85,22 +85,23 @@ export default function Home() {
         </section>
       </section>
 
-      <section>
-        <Image src={walk} style={{ width: "100%" }} />
-      </section>
-
-      <section
-        style={{ height: "60vh" }}
-        className="flex items-center justify-center text-center "
-      >
-        <div className="px-8">
-          <p className="text-3xl md:text-5xl leading-tight mb-10">
-            We can’t wait to celebrate with you.
-          </p>
-          <p className="text-xl md:text-3xl">
-            — <Logo />
-          </p>
-        </div>
+      <section className="flex flex-col-reverse md:flex-col">
+        <section
+          style={{ height: "80vh" }}
+          className="flex items-center justify-center text-center"
+        >
+          <div className="px-8">
+            <p className="text-3xl md:text-5xl leading-tight mb-10">
+              We can’t wait to celebrate with you.
+            </p>
+            <p className="text-xl md:text-3xl">
+              — <Logo />
+            </p>
+          </div>
+        </section>
+        <section>
+          <Image src={walk} style={{ width: "100%" }} />
+        </section>
       </section>
 
       <section className="flex justify-center items-center">
