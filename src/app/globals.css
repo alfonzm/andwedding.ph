@@ -38,18 +38,18 @@ body {
   background-position: center;
 }
 
-h1 {
+.home h1 {
   width: 19ch;
   margin: auto;
 }
 
 @media only screen and (min-width: 768px) {
-  h1 {
+  .home h1 {
     width: 38ch;
   }
 }
 
-h3 {
+.home h3 {
   letter-spacing: 0.25em;
 }
 

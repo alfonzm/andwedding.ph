@@ -10,7 +10,7 @@ import Logo from "./components/logo";
 
 export default function Home() {
   return (
-    <>
+    <main className="home">
       <section
         className="p-10 text-center flex"
         style={{
@@ -113,6 +113,6 @@ export default function Home() {
           RSVP
         </Link>
       </section>
-    </>
+    </main>
   );
 }
