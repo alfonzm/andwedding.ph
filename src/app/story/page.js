@@ -9,6 +9,13 @@ import hold from "../images/hold.jpg";
 import carry from "../images/carry.jpg";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Our Story — A&D 09.16.23",
+  url: "https://andwedding.ph",
+  description:
+    "On the 16th of September 2023, all roads lead to Lord of the Holy Cross Parish for the wedding of Alfonz Montelibano & Danica Impang.",
+};
+
 export default function Story() {
   return (
     <main>
@@ -31,9 +38,8 @@ export default function Story() {
         </p>
 
         <p>
-          Unbeknownst to them at the time, these innocent and seemingly
-          insignificant classroom counters would later unfold into something
-          beautiful.
+          Unknown to them at the time, these seemingly insignificant classroom
+          counters would later unfold into something beautiful.
         </p>
 
         <p className="mt-10">

@@ -27,9 +27,11 @@ const baskerville = localFont({
   ],
 });
 
+const title = "A&D 09.16.23";
+
 export const metadata = {
-  title: "A&D · 09-16-23",
-  siteName: "A&D · 09-16-23",
+  title,
+  siteName: title,
   url: "https://andwedding.ph",
   description:
     "On the 16th of September 2023, all roads lead to Lord of the Holy Cross Parish for the wedding of Alfonz Montelibano & Danica Impang.",
