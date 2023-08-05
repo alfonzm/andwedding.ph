@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 
 import { Baskervville } from "next/font/google";
 import localFont from "next/font/local";
+import coverMeta from "./images/cover-meta.jpg";
 
 // const baskervville = Baskervville({ subsets: ["latin"], weight: ["400"] });
 const baskerville = localFont({
@@ -34,7 +35,7 @@ export const metadata = {
   description:
     "On the 16th of September 2023, all roads lead to Lord of the Holy Cross Parish for the wedding of Alfonz Montelibano & Danica Impang.",
   openGraph: {
-    images: ["./images/cover-meta.jpg"],
+    images: [coverMeta],
   },
 };
 
