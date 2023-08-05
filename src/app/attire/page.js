@@ -1,5 +1,4 @@
-import { redirect } from "next/navigation";
-import Head from "next/head";
+import RedirectAttire from './redirect';
 
 export const metadata = {
   title: "Attire Guide — A&D 09.16.23",
@@ -9,13 +8,5 @@ export const metadata = {
 };
 
 export default function Attire() {
-  // return (
-  //   <Head>
-  //     <meta
-  //       http-equiv="refresh"
-  //       content="1; url=https://drive.google.com/file/d/1QavAGKeL_Pg0ISI-csEhP3qNzV5oZJgy/view?usp=share_link"
-  //     />
-  //   </Head>
-  // );
-  redirect('https://drive.google.com/file/d/1QavAGKeL_Pg0ISI-csEhP3qNzV5oZJgy/view?usp=share_link')
+  return <RedirectAttire />
 }
